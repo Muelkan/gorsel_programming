@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDF77966-F856-4AD6-80D0-46AF30456145}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Crystok</RootNamespace>
+    <AssemblyName>Crystok</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\FlimProjesi\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar.Designer.cs">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryAnaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryAnaekran.Designer.cs">
+      <DependentUpon>CryAnaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryCikis.Designer.cs">
+      <DependentUpon>CryCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crydepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crydepo.Designer.cs">
+      <DependentUpon>Crydepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryDetay.Designer.cs">
+      <DependentUpon>CryDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryGiris.Designer.cs">
+      <DependentUpon>CryGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryKategori.Designer.cs">
+      <DependentUpon>CryKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryYeniHesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryYeniHesap.Designer.cs">
+      <DependentUpon>CryYeniHesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryYeniSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryYeniSatis.Designer.cs">
+      <DependentUpon>CryYeniSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="havadrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="havadrm.Designer.cs">
+      <DependentUpon>havadrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SabitRapolama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SabitRapolama.Designer.cs">
+      <DependentUpon>SabitRapolama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SabitSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SabitSatis.Designer.cs">
+      <DependentUpon>SabitSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SabitStokdurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SabitStokdurum.Designer.cs">
+      <DependentUpon>SabitStokdurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SabitYenistok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SabitYenistok.Designer.cs">
+      <DependentUpon>SabitYenistok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlType.cs" />
+    <Compile Include="Veritabani.cs" />
+    <Compile Include="yardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yardim.Designer.cs">
+      <DependentUpon>yardim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ayarlar.resx">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryAnaekran.resx">
+      <DependentUpon>CryAnaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryCikis.resx">
+      <DependentUpon>CryCikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crydepo.resx">
+      <DependentUpon>Crydepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryDetay.resx">
+      <DependentUpon>CryDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryGiris.resx">
+      <DependentUpon>CryGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryKategori.resx">
+      <DependentUpon>CryKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryYeniHesap.resx">
+      <DependentUpon>CryYeniHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryYeniSatis.resx">
+      <DependentUpon>CryYeniSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="havadrm.resx">
+      <DependentUpon>havadrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SabitRapolama.resx">
+      <DependentUpon>SabitRapolama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SabitSatis.resx">
+      <DependentUpon>SabitSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SabitStokdurum.resx">
+      <DependentUpon>SabitStokdurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SabitYenistok.resx">
+      <DependentUpon>SabitYenistok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yardim.resx">
+      <DependentUpon>yardim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Settings1.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-icons-preview-t-s_022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aralar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aralaryeni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ara2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stokdurumu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ytkisi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosalt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yardim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lisance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lisancedonw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kutu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tahtakutu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stokdurumup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlarp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikisp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yardimp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usttikli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilkorta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilkust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imac-template.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ustresim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lisansara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-right-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropbox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg.-text-entering-comment-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ira.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iraa.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
